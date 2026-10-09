@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    /* set theme before first paint (no flash) */
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var sys = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", saved || sys);
+      } catch (e) { /* private mode etc. */ }
+    })();
+  </script>
+  <title>Ashok Budha — AI/ML Researcher &amp; Lecturer</title>
+  <meta name="description" content="Ashok Budha — AI/ML engineer and lecturer based in Kathmandu, Nepal. NLP, LLM systems, RAG, multimodal learning. Seeking PhD opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23fbfaf7'/><text x='50' y='68' font-family='Georgia' font-size='44' fill='%231c1e21' text-anchor='middle'>A</text></svg>" />
+</head>
+<body>
+
+  <header class="masthead">
+    <nav class="container nav" id="nav">
+      <a class="nav-name" href="#top">Ashok Budha</a>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener">CV ↓</a></li>
+        <li>
+          <button class="nav-theme" id="themeBtn" aria-pressed="false" title="Toggle colour mode">
+            <span class="nt-icon" aria-hidden="true"></span><span class="nt-label" id="themeLabel">Dark</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container intro">
+      <div class="intro-text">
+        <p class="kicker mono">AI / Machine Learning · Kathmandu, Nepal</p>
+        <h1>Ashok Budha</h1>
+        <p class="tagline">
+          Engineer and lecturer working on applied language technologies —
+          retrieval-augmented generation, natural-language interfaces to data,
+          and multimodal learning. Currently seeking PhD opportunities
+          starting 2026 in NLP / Machine Learning.
+        </p>
+        <p class="contact-line mono">
+          <a href="mailto:ashok.budha2015@gmail.com">ashok.budha2015@gmail.com</a> ·
+          <a href="resume.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a> ·
+          Kirtipur, Kathmandu
+        </p>
+      </div>
+      <figure class="intro-photo">
+        <img src="ashokbudha.jpeg" alt="Portrait of Ashok Budha" />
+      </figure>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Research -->
+    <section class="section" id="research">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§1</span> Research Statement</h2>
+        <div class="prose">
+          <p>
+            My work sits at the intersection of natural language processing and applied
+            machine learning: how systems can turn unstructured language — text, speech,
+            broadcast audio — into reliable, verifiable knowledge. At LIS Nepal I took a
+            natural-language-to-SQL system from proof of concept to a deployable product,
+            building the parsing, intent-detection and embedding layers that made it work.
+            Earlier, I built retrieval-augmented generation systems over structured
+            knowledge bases together with evaluation pipelines using state-of-the-art
+            generation metrics.
+          </p>
+          <p>
+            My undergraduate thesis research produced a peer-presented publication on a
+            multi-modal pipeline for generating sports summaries from broadcast audio,
+            metadata, and news text, reaching ROGUE scores comparable to
+            state-of-the-art baselines. I am now looking to deepen this line of work in a
+            doctoral program, with interests in:
+          </p>
+          <ul class="interests">
+            <li>Large language models &amp; retrieval-augmented generation</li>
+            <li>Semantic parsing and natural-language interfaces to structured data</li>
+            <li>Multimodal learning (audio · text · metadata)</li>
+            <li>Speech processing and ASR systems for low-resource languages</li>
+            <li>Evaluation methodology for generative systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§2</span> Publications</h2>
+        <ol class="pubs">
+          <li>
+            <p>
+              B.&nbsp;Khanal, A.&nbsp;Budha, A.&nbsp;Chapain, K.&nbsp;Shrestha and U.&nbsp;K.&nbsp;Ghimire,
+              “Automated Multi-Modal Pipeline for Generating Football Game Summaries,”
+              <em>TechRxiv preprint</em>, 10 Jul. 2023, doi:
+              <a href="https://doi.org/10.36227/techrxiv.23607285.v2" target="_blank" rel="noopener">10.36227/techrxiv.23607285.v2</a>.
+            </p>
+            <p class="pub-note">Presented at ICT-CEEL 2023 (International Conference on Technologies for Computer, Electrical, Electronics &amp; Communication), Khwopa Engineering College, Bhaktapur.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§3</span> Professional Experience</h2>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2025 — Present</span></div>
+          <div class="entry-body">
+            <h3>Lecturer, Artificial Intelligence</h3>
+            <p class="org">National College of Management and Technical Sciences (NCMT) · Samakhushi, Nepal</p>
+            <ul>
+              <li>Deliver undergraduate AI lectures for B.Sc. Computer Science and B.Sc. Information Technology programs.</li>
+              <li>Design and supervise laboratory sessions and practical assignments.</li>
+              <li>Mentor students on AI coursework projects and research.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2023 — 2025</span></div>
+          <div class="entry-body">
+            <h3>Associate Software Engineer → Software Engineer I</h3>
+            <p class="org">LIS Nepal Pvt. Ltd. · Manbhawan, Lalitpur</p>
+            <ul>
+              <li>Research &amp; development of a natural-language-to-SQL system, from proof of concept to a deployable solution.</li>
+              <li>NLP parsing modules over unstructured text: dependency parsing, POS tagging, named-entity recognition.</li>
+              <li>Domain-specific embeddings for metadata handling and industry-context capture.</li>
+              <li>Intent detection and clarification modules for conversational query understanding.</li>
+              <li>LLM-powered applications built with LangChain and LangGraph; backends in Django REST Framework and FastAPI.</li>
+              <li>Speech-to-text pipelines using Vosk, Sphinx, Whisper, Azure Speech and Google Speech-to-Text.</li>
+              <li>RAG system for natural-language interaction over structured knowledge bases, with evaluation pipelines based on state-of-the-art generation metrics.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2023</span></div>
+          <div class="entry-body">
+            <h3>Software Engineer I</h3>
+            <p class="org">Elytra Solutions Pvt. Ltd. · Baneshwor, Kathmandu</p>
+            <ul>
+              <li>Scalable backend systems in Django / Django REST Framework with modular RESTful APIs.</li>
+              <li>Asynchronous task queues via Celery and Redis; JWT/OAuth2 authentication and third-party integrations.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§4</span> Research Projects</h2>
+
+        <article class="entry entry-project">
+          <div class="entry-meta"><span class="mono">2023 · B.E. Thesis</span></div>
+          <div class="entry-body">
+            <h3>Multi-Modal Pipeline for Football Game Summary Generation</h3>
+            <p>
+              Generation of game summaries from broadcast audio, game metadata and news
+              reporting. Evaluated on the ROGUE metric with results comparable to
+              state-of-the-art models. Published and presented at ICT-CEEL 2023.
+            </p>
+            <p class="stack mono">ASR · NLG · multimodal fusion · ROGUE</p>
+          </div>
+        </article>
+
+        <article class="entry entry-project">
+          <div class="entry-meta"><span class="mono">2022 · Minor Project</span></div>
+          <div class="entry-body">
+            <h3>Pneumothorax Segmentation from Chest X-rays</h3>
+            <p>
+              Segmentation of pneumothorax regions in chest radiographs using deep
+              convolutional networks and transfer learning, targeting earlier and cheaper
+              diagnosis support in medical imaging.
+            </p>
+            <p class="stack mono">DCNN · transfer learning · medical imaging</p>
+          </div>
+        </article>
+
+        <article class="entry entry-project">
+          <div class="entry-meta"><span class="mono">Coursework Research</span></div>
+          <div class="entry-body">
+            <h3>Image Captioning using VGG16 and Transformers</h3>
+            <p>
+              End-to-end captioning pipeline: a VGG16 vision encoder paired with a
+              transformer-based decoder for text generation.
+            </p>
+            <p class="stack mono">CNN encoder · transformer decoder · vision-language</p>
+          </div>
+        </article>
+
+        <article class="entry entry-project">
+          <div class="entry-meta"><span class="mono">2024 — 2025 · Industry R&amp;D</span></div>
+          <div class="entry-body">
+            <h3>Natural-Language-to-SQL &amp; Conversational Query Systems</h3>
+            <p>
+              Production R&amp;D at LIS Nepal: semantic parsing over unstructured text,
+              domain-specific embeddings, intent detection with clarification turns, and
+              agentic workflows with LangChain / LangGraph.
+            </p>
+            <p class="stack mono">semantic parsing · embeddings · RAG · LLM agents</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§5</span> Education</h2>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2019 — 2023</span></div>
+          <div class="entry-body">
+            <h3>B.E., Computer Engineering</h3>
+            <p class="org">Institute of Engineering, Thapathali Campus · Tribhuvan University</p>
+            <p>
+              Graduated August 2023 with 73.49%; IEE international evaluation GPA 3.64/4.0.
+              Semester topper (8th semester, 82.53%). Relevant coursework: machine-learning-adjacent
+              and core CS subjects including Artificial Intelligence, Data Mining, OOP &amp; OOAD,
+              Theory of Computation, Computer Networks, Numerical Methods and Computer Graphics.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2023</span></div>
+          <div class="entry-body">
+            <h3>Microdegree in Artificial Intelligence — AI Fellowship</h3>
+            <p class="org">Fusemachines · Kathmandu</p>
+            <p>Scholarship-funded fellowship (Feb–Aug 2023) covering theoretical and practical aspects of modern AI.</p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta"><span class="mono">2016 — 2018</span></div>
+          <div class="entry-body">
+            <h3>+2 Science</h3>
+            <p class="org">Sainik Aawasiya Mahavidyalaya · Sallaghari, Bhaktapur</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Honors -->
+    <section class="section" id="honors">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§6</span> Honours, Awards &amp; Service</h2>
+        <ul class="honors">
+          <li><span class="mono yr">2021</span> <b>Winner, Docsumo Datarush</b> — national machine-learning competition organized by LOCUS, IOE Pulchowk Campus (classification of research-paper abstracts).</li>
+          <li><span class="mono yr">2023</span> <b>Fusemachines AI Fellowship</b> — selected on scholarship.</li>
+          <li><span class="mono yr">2023</span> <b>Semester topper</b>, 8th semester, Computer Engineering, IOE Thapathali Campus.</li>
+          <li><span class="mono yr">2020–22</span> <b>Program coordinator, ECAST Thapathali</b> — organized coding workshops and competitive programming events.</li>
+          <li><span class="mono yr">2021</span> <b>Python &amp; Django instructor</b> — ECAST workshop series (Python, HTML/CSS, Git, Django).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§7</span> Technical Skills</h2>
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Python, SQL, C/C++, JavaScript/TypeScript (working), HTML/CSS</dd></div>
+          <div><dt>Machine Learning</dt><dd>PyTorch / TensorFlow, transformers, CNNs, transfer learning, embeddings, model evaluation (ROGUE and related metrics)</dd></div>
+          <div><dt>NLP &amp; LLM</dt><dd>dependency parsing, POS tagging, NER, semantic parsing, RAG, LangChain, LangGraph, prompt engineering, LLM evaluation</dd></div>
+          <div><dt>Speech</dt><dd>Whisper, Vosk, CMU Sphinx, Azure Speech-to-Text, Google Speech-to-Text</dd></div>
+          <div><dt>Engineering</dt><dd>Django, Django REST Framework, FastAPI, Celery, Redis, JWT/OAuth2, Git, Linux</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2 class="sec"><span class="sec-no mono">§8</span> Contact</h2>
+        <div class="prose">
+          <p>
+            I am seeking fully funded PhD positions (intended entry 2026) in natural
+            language processing and machine learning, and I welcome inquiries about
+            research collaborations, visiting student positions, or guest lectures.
+          </p>
+          <p class="contact-line mono">
+            <a href="mailto:ashok.budha2015@gmail.com">ashok.budha2015@gmail.com</a> ·
+            <a href="tel:+9779868225021">+977&nbsp;98682&nbsp;25021</a> ·
+            <a href="resume.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="container narrow foot-inner mono">
+      <span>© <span id="year"></span> Ashok Budha · Kirtipur, Kathmandu, Nepal</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
